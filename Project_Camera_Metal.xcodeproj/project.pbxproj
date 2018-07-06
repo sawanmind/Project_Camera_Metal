@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187E108020EB633B0041CB19 /* VideoProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E107F20EB633B0041CB19 /* VideoProcessor.swift */; };
+		187E108220EB65770041CB19 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E108120EB65770041CB19 /* MetalView.swift */; };
+		187E108420EB67AD0041CB19 /* ColorKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 187E108320EB67AD0041CB19 /* ColorKernel.metal */; };
+		187E108620EB691A0041CB19 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 187E108520EB69190041CB19 /* video.mp4 */; };
+		187E108820EB69610041CB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E108720EB69610041CB19 /* Main.storyboard */; };
+		18A17DE220EE0D1C0036D55D /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A17DE120EE0D1C0036D55D /* Preview.swift */; };
+		18E9231920EA48D50019BA48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9231820EA48D50019BA48 /* AppDelegate.swift */; };
+		18E9232020EA48D80019BA48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E9231F20EA48D80019BA48 /* Assets.xcassets */; };
+		18E9232320EA48D80019BA48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E9232120EA48D80019BA48 /* LaunchScreen.storyboard */; };
+		18E9233220EA496A0019BA48 /* MTKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9232B20EA496A0019BA48 /* MTKViewController.swift */; };
+		18E9233320EA496A0019BA48 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 18E9232C20EA496A0019BA48 /* Shaders.metal */; };
+		18E9233420EA496A0019BA48 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9232E20EA496A0019BA48 /* CameraViewController.swift */; };
+		18E9233520EA496A0019BA48 /* MetalCameraCaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9232F20EA496A0019BA48 /* MetalCameraCaptureDevice.swift */; };
+		18E9233620EA496A0019BA48 /* MetalCameraSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9233020EA496A0019BA48 /* MetalCameraSession.swift */; };
+		18E9233720EA496A0019BA48 /* MetalCameraSessionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9233120EA496A0019BA48 /* MetalCameraSessionTypes.swift */; };
+		27AB5D33624DE39572BA7F3D /* Pods_Project_Camera_Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BADB4771488D626AC6FDCAE /* Pods_Project_Camera_Metal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		187E107F20EB633B0041CB19 /* VideoProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessor.swift; sourceTree = "<group>"; };
+		187E108120EB65770041CB19 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		187E108320EB67AD0041CB19 /* ColorKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorKernel.metal; sourceTree = "<group>"; };
+		187E108520EB69190041CB19 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		187E108720EB69610041CB19 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		18A17DE120EE0D1C0036D55D /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		18E9231520EA48D50019BA48 /* Project_Camera_Metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_Camera_Metal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E9231820EA48D50019BA48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18E9231F20EA48D80019BA48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18E9232220EA48D80019BA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18E9232420EA48D80019BA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E9232B20EA496A0019BA48 /* MTKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTKViewController.swift; sourceTree = "<group>"; };
+		18E9232C20EA496A0019BA48 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		18E9232E20EA496A0019BA48 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		18E9232F20EA496A0019BA48 /* MetalCameraCaptureDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCameraCaptureDevice.swift; sourceTree = "<group>"; };
+		18E9233020EA496A0019BA48 /* MetalCameraSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCameraSession.swift; sourceTree = "<group>"; };
+		18E9233120EA496A0019BA48 /* MetalCameraSessionTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCameraSessionTypes.swift; sourceTree = "<group>"; };
+		3BADB4771488D626AC6FDCAE /* Pods_Project_Camera_Metal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Camera_Metal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F2095F9FA0A880B2A49FFD /* Pods-Project_Camera_Metal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_Camera_Metal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project_Camera_Metal/Pods-Project_Camera_Metal.release.xcconfig"; sourceTree = "<group>"; };
+		D9ACF0C6B2407814E8E6F733 /* Pods-Project_Camera_Metal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_Camera_Metal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project_Camera_Metal/Pods-Project_Camera_Metal.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E9231220EA48D50019BA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AB5D33624DE39572BA7F3D /* Pods_Project_Camera_Metal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180C0A2020ECD01800699291 /* VideoProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				187E108520EB69190041CB19 /* video.mp4 */,
+				187E108720EB69610041CB19 /* Main.storyboard */,
+				187E107F20EB633B0041CB19 /* VideoProcessor.swift */,
+				187E108120EB65770041CB19 /* MetalView.swift */,
+				187E108320EB67AD0041CB19 /* ColorKernel.metal */,
+			);
+			path = VideoProcessor;
+			sourceTree = "<group>";
+		};
+		180C0A2220ECD03F00699291 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18E9231820EA48D50019BA48 /* AppDelegate.swift */,
+				18E9231F20EA48D80019BA48 /* Assets.xcassets */,
+				18E9232120EA48D80019BA48 /* LaunchScreen.storyboard */,
+				18E9232420EA48D80019BA48 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18E9230C20EA48D50019BA48 = {
+			isa = PBXGroup;
+			children = (
+				18E9231720EA48D50019BA48 /* Project_Camera_Metal */,
+				18E9231620EA48D50019BA48 /* Products */,
+				89840AFA24590AD8D809589B /* Pods */,
+				51D7844F529C0F8880328EF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18E9231620EA48D50019BA48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E9231520EA48D50019BA48 /* Project_Camera_Metal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E9231720EA48D50019BA48 /* Project_Camera_Metal */ = {
+			isa = PBXGroup;
+			children = (
+				18E9232D20EA496A0019BA48 /* MetalCameraSession */,
+				18E9232A20EA496A0019BA48 /* MetalKitVC */,
+				180C0A2220ECD03F00699291 /* Resources */,
+				180C0A2020ECD01800699291 /* VideoProcessor */,
+			);
+			path = Project_Camera_Metal;
+			sourceTree = "<group>";
+		};
+		18E9232A20EA496A0019BA48 /* MetalKitVC */ = {
+			isa = PBXGroup;
+			children = (
+				18E9232E20EA496A0019BA48 /* CameraViewController.swift */,
+				18A17DE120EE0D1C0036D55D /* Preview.swift */,
+				18E9232B20EA496A0019BA48 /* MTKViewController.swift */,
+				18E9232C20EA496A0019BA48 /* Shaders.metal */,
+			);
+			path = MetalKitVC;
+			sourceTree = "<group>";
+		};
+		18E9232D20EA496A0019BA48 /* MetalCameraSession */ = {
+			isa = PBXGroup;
+			children = (
+				18E9232F20EA496A0019BA48 /* MetalCameraCaptureDevice.swift */,
+				18E9233020EA496A0019BA48 /* MetalCameraSession.swift */,
+				18E9233120EA496A0019BA48 /* MetalCameraSessionTypes.swift */,
+			);
+			path = MetalCameraSession;
+			sourceTree = "<group>";
+		};
+		51D7844F529C0F8880328EF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BADB4771488D626AC6FDCAE /* Pods_Project_Camera_Metal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89840AFA24590AD8D809589B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9ACF0C6B2407814E8E6F733 /* Pods-Project_Camera_Metal.debug.xcconfig */,
+				91F2095F9FA0A880B2A49FFD /* Pods-Project_Camera_Metal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E9231420EA48D50019BA48 /* Project_Camera_Metal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E9232720EA48D80019BA48 /* Build configuration list for PBXNativeTarget "Project_Camera_Metal" */;
+			buildPhases = (
+				B3EE9E6F6B246DC78FD02637 /* [CP] Check Pods Manifest.lock */,
+				18E9231120EA48D50019BA48 /* Sources */,
+				18E9231220EA48D50019BA48 /* Frameworks */,
+				18E9231320EA48D50019BA48 /* Resources */,
+				E9905AE461D3AD11D1A994FD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Project_Camera_Metal;
+			productName = Project_Camera_Metal;
+			productReference = 18E9231520EA48D50019BA48 /* Project_Camera_Metal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E9230D20EA48D50019BA48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Genisys;
+				TargetAttributes = {
+					18E9231420EA48D50019BA48 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 18E9231020EA48D50019BA48 /* Build configuration list for PBXProject "Project_Camera_Metal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E9230C20EA48D50019BA48;
+			productRefGroup = 18E9231620EA48D50019BA48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E9231420EA48D50019BA48 /* Project_Camera_Metal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E9231320EA48D50019BA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187E108620EB691A0041CB19 /* video.mp4 in Resources */,
+				18E9232320EA48D80019BA48 /* LaunchScreen.storyboard in Resources */,
+				18E9232020EA48D80019BA48 /* Assets.xcassets in Resources */,
+				187E108820EB69610041CB19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3EE9E6F6B246DC78FD02637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project_Camera_Metal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9905AE461D3AD11D1A994FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Project_Camera_Metal/Pods-Project_Camera_Metal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MetalPetal/MetalPetal.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MetalPetal.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project_Camera_Metal/Pods-Project_Camera_Metal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E9231120EA48D50019BA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187E108020EB633B0041CB19 /* VideoProcessor.swift in Sources */,
+				18E9233320EA496A0019BA48 /* Shaders.metal in Sources */,
+				18A17DE220EE0D1C0036D55D /* Preview.swift in Sources */,
+				18E9233620EA496A0019BA48 /* MetalCameraSession.swift in Sources */,
+				18E9233520EA496A0019BA48 /* MetalCameraCaptureDevice.swift in Sources */,
+				18E9233420EA496A0019BA48 /* CameraViewController.swift in Sources */,
+				18E9233720EA496A0019BA48 /* MetalCameraSessionTypes.swift in Sources */,
+				187E108420EB67AD0041CB19 /* ColorKernel.metal in Sources */,
+				187E108220EB65770041CB19 /* MetalView.swift in Sources */,
+				18E9231920EA48D50019BA48 /* AppDelegate.swift in Sources */,
+				18E9233220EA496A0019BA48 /* MTKViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18E9232120EA48D80019BA48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E9232220EA48D80019BA48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E9232520EA48D80019BA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18E9232620EA48D80019BA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E9232820EA48D80019BA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9ACF0C6B2407814E8E6F733 /* Pods-Project_Camera_Metal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6998RP55G;
+				INFOPLIST_FILE = "$(SRCROOT)/Project_Camera_Metal/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_COMPILER_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Genisys.Project-Camera-Metal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18E9232920EA48D80019BA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F2095F9FA0A880B2A49FFD /* Pods-Project_Camera_Metal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6998RP55G;
+				INFOPLIST_FILE = "$(SRCROOT)/Project_Camera_Metal/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_COMPILER_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Genisys.Project-Camera-Metal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E9231020EA48D50019BA48 /* Build configuration list for PBXProject "Project_Camera_Metal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E9232520EA48D80019BA48 /* Debug */,
+				18E9232620EA48D80019BA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E9232720EA48D80019BA48 /* Build configuration list for PBXNativeTarget "Project_Camera_Metal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E9232820EA48D80019BA48 /* Debug */,
+				18E9232920EA48D80019BA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E9230D20EA48D50019BA48 /* Project object */;
+}

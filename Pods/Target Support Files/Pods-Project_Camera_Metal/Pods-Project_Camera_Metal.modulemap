@@ -1,0 +1,6 @@
+framework module Pods_Project_Camera_Metal {
+  umbrella header "Pods-Project_Camera_Metal-umbrella.h"
+
+  export *
+  module * { export * }
+}

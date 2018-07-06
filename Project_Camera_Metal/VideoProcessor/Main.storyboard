@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="toh-g5-6nO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Processor-->
+        <scene sceneID="CiB-mg-c7d">
+            <objects>
+                <viewController id="toh-g5-6nO" customClass="VideoProcessor" customModule="Project_Camera_Metal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dPr-pV-Xlh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fp-sT-nVy" customClass="MetalView" customModule="Project_Camera_Metal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Hm-zm-TCe" customClass="MetalView" customModule="Project_Camera_Metal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1Hm-zm-TCe" secondAttribute="trailing" id="HpP-78-l46"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Hm-zm-TCe" secondAttribute="bottom" id="jWl-zE-xsY"/>
+                                    <constraint firstItem="1Hm-zm-TCe" firstAttribute="top" secondItem="0fp-sT-nVy" secondAttribute="top" id="ka0-10-HL8"/>
+                                    <constraint firstItem="1Hm-zm-TCe" firstAttribute="leading" secondItem="0fp-sT-nVy" secondAttribute="leading" id="mP3-N0-4Wh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0fp-sT-nVy" secondAttribute="trailing" id="4rE-eR-b0U"/>
+                            <constraint firstItem="0fp-sT-nVy" firstAttribute="top" secondItem="dPr-pV-Xlh" secondAttribute="top" id="CPv-sY-gKE"/>
+                            <constraint firstItem="0fp-sT-nVy" firstAttribute="bottom" secondItem="IDN-Vr-T6m" secondAttribute="bottom" id="POZ-q4-15P"/>
+                            <constraint firstItem="0fp-sT-nVy" firstAttribute="leading" secondItem="dPr-pV-Xlh" secondAttribute="leading" id="UFt-VB-Lia"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IDN-Vr-T6m"/>
+                    </view>
+                    <connections>
+                        <outlet property="metalView" destination="1Hm-zm-TCe" id="4Fz-pp-8P8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLb-mg-ZMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.59999999999999" y="119.1904047976012"/>
+        </scene>
+    </scenes>
+</document>
